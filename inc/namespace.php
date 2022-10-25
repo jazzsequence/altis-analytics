@@ -22,7 +22,7 @@ function bootstrap( Module $module ) {
 		add_action( 'muplugins_loaded', __NAMESPACE__ . '\\load_google_tag_manager', 0 );
 	}
 
-	if ( $settings['native'] ) {
+	if ( function_exists( '\\Altis\\Analytics\\setup' ) ) {
 		add_action( 'muplugins_loaded', __NAMESPACE__ . '\\load_native_analytics', 0 );
 	}
 
