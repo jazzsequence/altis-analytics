@@ -1,5 +1,5 @@
 {
-    "name": "altis/analytics",
+    "name": "jazzsequence/altis-analytics",
     "description": "Analytics module for Altis",
     "type": "package",
     "require": {
